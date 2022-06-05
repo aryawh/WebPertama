@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "SF UI";
+  src: url(/font/sfui.woff);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ee8352;
+  font-family: "SF UI";
+}
+
+main{
+    padding: 20px;
+    overflow: auto;
+}
+
+
+header {
+  display: flexbox;
+  padding: 10px;
+  background-image: url(/assets/quran1.jpg);
+  background-size: cover;
+  background-position: 0 -370px;
+}
+
+.sub-header {
+  text-align: center;
+  color: #fdf395;
+}
+
+.sub-header p {
+  background-color: black;
+  margin: 0 auto;
+  display: inline;
+  border-radius: 3px;
+}
+
+header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header a {
+  text-decoration: none;
+  padding: 3px;
+  color: black;
+  font-weight: bold;
+  background-color: #a7c5fa;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #fdf395;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.content {
+    float: left;
+    width: 80%;
+    background-color: #ffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.image-container {
+  display: flex;
+  
+}
+
+.image{
+    margin: 5px;
+    border-radius:2px;
+}
+
+.one {
+  height: 300px;
+  flex-grow: 1;
+  background-image: url(/assets/quran2.jpg);
+  background-size: cover;
+  background-position: -20px 0;
+}
+
+.two {
+  height: 300px;
+  flex-grow: 2;
+  background-image: url(/assets/quran3.jpg);
+  background-size: cover;
+}
+
+.three {
+  height: 300px;
+  flex-grow: 1;
+  background-image: url(/assets/quran4.jpg);
+  background-size: cover;
+  background-position: -130px 0;
+}
+
+aside{
+    float: right;
+    width: 20%;
+    padding-left: 20px;
+}
+
+.card{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #a7c5fa;
+    padding: 10px;
+}
+
+.sub-card{
+    height: 300px;
+    background-image: url(/assets/arya1.jpg);
+    background-size: cover;
+    background-position:-10px 0;
+}
+
+footer{
+  background-color: #a7c5fa;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+  main,
+  aside{
+      width: 100%;
+      padding: 0;
+  }
+}
